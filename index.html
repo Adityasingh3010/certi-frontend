@@ -153,6 +153,53 @@
                     </div>
                 </div>
             </div>
+
+            <div class="row">
+                <div class="col-12 offset-sm-11 but-position">
+                    <button type="button" id="read" onclick="read()">View All</button>
+                    <span id="dots"></span>
+                    <span id="All">
+                        <div class="row">
+                            <div class="col-6 col-sm new-position">
+                                <div class="grid">
+                                    <div class="wrapper">
+                                        <div class="card">
+                                            <div class="img"></div>
+                                            <div class="row">
+                                                <div class="text">
+                                                    <div>
+                                                        <b>Course Name</b>
+                                                        <p>Some text</p>
+                                                    </div>
+                                                </div>
+                                                <div class = "button"><span>&rarr;</span></div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>  
+                        </div>
+                    </span>
+                
+                    <script type="text/javascript">
+                        var i=0;
+                        function read() {
+                            if(!i){
+                                document.getElementById("All").style.display="inline";
+                                document.getElementById("dots").style.display="none";
+                                document.getElementById("read").innerHTML="View less";
+                                i=1;
+                            }
+                            else{
+                                document.getElementById("All").style.display="none";
+                                document.getElementById("dots").style.display="inline";
+                                document.getElementById("read").innerHTML="View All";
+                                i=0;
+                            }
+                        }
+                    </script>
+                </div>
+            </div>
         </div>
 	</div>
 
