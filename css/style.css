@@ -175,7 +175,7 @@ body
 
 }
 .heading {
-  background-image: url("C:/Users/hp/Desktop/Certi-Frontend/certi-frontend/Images/Our_courses_boxes.svg");
+  background-image: url("../Images/Our_courses_boxes.svg");
   background-repeat: no-repeat;
   padding-bottom: 50px;
   padding-top: 45px;
@@ -240,7 +240,7 @@ body
 @media only screen and (min-width: 600px)
 {
   #our-courses {
-    background-image: url("C:/Users/hp/Desktop/Certi-Frontend/certi-frontend/Images/Courses_bg.jpg");
+    background-image: url("../Images/Courses_bg.jpg");
     background-repeat: no-repeat;
     background-position: right;
     }
