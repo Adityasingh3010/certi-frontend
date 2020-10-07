@@ -118,21 +118,14 @@
             </div>
         </div>
 
-            <div class="row horiz-posi">
+            <div class="row offset-md-1">
                 <div class="col-12 col-sm-12">
-                    <div class="table-responsive">
+                    <div class="table-responsive scroll" id="tableControl">
                         <table class="table">
                             <tbody>
-                                <tr>
-                                    <td>
-                                        <div class="card">
-                                            <div class="img offset-1"></div>
-                                            <div class="card-body">
-                                                <h2 class="card-title">Our-Courses</h2>
-                                                <h4 >Some Text</h4>
-                                                <button class = "button"><span>&rarr;</span></button>
-                                            </div>
-                                        </div>
+                                <tr id="tslshow">
+                                    <td id="rightArrow">
+                                        <i class="fa fa-angle-double-left" aria-hidden="true"></i>
                                     </td>
                                     <td>
                                         <div class="card">
@@ -143,6 +136,64 @@
                                                 <button class = "button"><span>&rarr;</span></button>
                                             </div>
                                         </div>
+                                    </td>
+                                    <td class="offset-1">
+                                        <div class="card-distance"></div>
+                                    </td>
+                                    <td>
+                                        <div class="card">
+                                            <div class="img offset-1"></div>
+                                            <div class="card-body">
+                                                <h2 class="card-title">Our-Courses</h2>
+                                                <h4 >Some Text</h4>
+                                                <button class = "button"><span>&rarr;</span></button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="offset-1">
+                                        <div class="card-distance"></div>
+                                    </td>
+                                    <td>
+                                        <div class="card">
+                                            <div class="img offset-1"></div>
+                                            <div class="card-body">
+                                                <h2 class="card-title">Our-Courses</h2>
+                                                <h4 >Some Text</h4>
+                                                <button class = "button"><span>&rarr;</span></button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td id="LeftArrow">
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="offset-1">
+                                        <div class="card-distance"></div>
+                                    </td>
+                                    <td>
+                                        <div class="card">
+                                            <div class="img offset-1"></div>
+                                            <div class="card-body">
+                                                <h2 class="card-title">Our-Courses</h2>
+                                                <h4 >Some Text</h4>
+                                                <button class = "button"><span>&rarr;</span></button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="offset-1">
+                                        <div class="card-distance"></div>
+                                    </td>
+                                    <td class>
+                                        <div class="card">
+                                            <div class="img offset-1"></div>
+                                            <div class="card-body">
+                                                <h2 class="card-title">Our-Courses</h2>
+                                                <h4 >Some Text</h4>
+                                                <button class = "button"><span>&rarr;</span></button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="offset-1">
+                                        <div class="card-distance"></div>
                                     </td>
                                     <td>
                                         <div class="card">
@@ -169,79 +220,7 @@
                 </div>
             </div>
         </div>
-            <div class="row horiz-posi">
-                <div class="col-12 col-sm-12">
-                    <span id="All">
-                        <div class="table-responsive">
-                            <table class="table">
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <div class="card">
-                                                <div class="img offset-1"></div>
-                                                <div class="card-body">
-                                                    <h2 class="card-title">Our-Courses</h2>
-                                                    <h4 >Some Text</h4>
-                                                    <button class = "button"><span>&rarr;</span></button>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="card">
-                                                <div class="img offset-1"></div>
-                                                <div class="card-body">
-                                                    <h2 class="card-title">Our-Courses</h2>
-                                                    <h4 >Some Text</h4>
-                                                    <button class = "button"><span>&rarr;</span></button>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="card">
-                                                <div class="img offset-1"></div>
-                                                <div class="card-body">
-                                                    <h2 class="card-title">Our-Courses</h2>
-                                                    <h4 >Some Text</h4>
-                                                    <button class = "button"><span>&rarr;</span></button>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="card">
-                                                <div class="img offset-1"></div>
-                                                <div class="card-body">
-                                                    <h2 class="card-title">Our-Courses</h2>
-                                                    <h4 >Some Text</h4>
-                                                    <button class = "button"><span>&rarr;</span></button>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <br>
-                                </tbody>
-                            </table>
-                        </div>
-                    </span>
-                    <script type="text/javascript">
-                        var i=0;
-                        function read() {
-                            if(!i){
-                                document.getElementById("All").style.display="inline";
-                                document.getElementById("dots").style.display="none";
-                                document.getElementById("read").innerHTML="View less";
-                                i=1;
-                            }
-                            else{
-                                document.getElementById("All").style.display="none";
-                                document.getElementById("dots").style.display="inline";
-                                document.getElementById("read").innerHTML="View All";
-                                i=0;
-                            }
-                        }
-                    </script>
-                </div>
-            </div>
-        </div>
+        <span id="All"></span>
     </div>
 
 
@@ -300,4 +279,23 @@ function menu(){
         x.className = "topnav";
     }
 }
+</script>
+<script>
+    var view = $("#tslshow");
+    var move = "100px";
+    var sliderLimit = -750;
+
+    $("#rightArrow").click(function(){
+
+        var currentPosition = parseInt(view.css("left"));
+        if (currentPosition >= sliderLimit) view.stop(false,true).animate({left:"-="+move},{ duration: 400})
+
+    });
+
+    $("#LeftArrow").click(function(){
+
+        var currentPosition = parseInt(view.css("left"));
+        if (currentPosition < 0) view.stop(false,true).animate({left:"+="+move},{ duration: 400});
+
+    });
 </script>
