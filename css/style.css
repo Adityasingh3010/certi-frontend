@@ -169,7 +169,6 @@ body
 /*Our Courses*/
 .row-content {
   margin:0px auto;
-  border-bottom: 1px ridge;
   min-height:100px;
   padding: 30px 0px 30px 0px;
 }
@@ -180,6 +179,28 @@ body
   padding-bottom: 50px;
   padding-top: 45px;
   padding-left: 35px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 10px;
+	height: 10px;
+	margin: 4px;
+	border-radius: 50%;
+	border: none;
+}
+.carousel-indicators li {	
+	background: rgba(0, 0, 0, 0.2);
+}
+.carousel-indicators li.active {	
+	background: rgba(0, 0, 0, 0.6);
+}
+.carousel-indicators {
+	bottom: -50px;
+}
+.carousel .item {
+	color: #747d89;
+	min-height: 325px;
+	text-align: center;
+	overflow: hidden;
 }
 .card {
   display: flex;
@@ -194,18 +215,14 @@ body
   width: 260px;
   box-shadow: 0px 4px 4px rgba(0,0, 0, 0.15), 0px 4px 16px rgba(0, 0, 0, 0.15);
 }
-.card-distance {
-  padding-left: 30%;
-  padding-right: 30%;
-}
 .img {
-  height: 69%;
+  height: 67%;
   width: 84%;
   display: -webkit-box;
   display: flex;
   justify-content: initial;
   -webkit-box-align: initial;
-  align-items: initial;
+  align-items: center;
   border-radius: 10px;
   background: linear-gradient(180deg, #0F3C76 0%, #0B2B55 100%);
 }
@@ -219,33 +236,40 @@ body
   top: 220px;
   text-align: center;
   width: 50px;
-  left: 207px;
+  left: 80%;
   border-radius: 5px 0px 0px 5px;
 }
-.table,tbody, tr, td {
-  height: 330px;
-  border:none !important;
+.carousel-control-prev, .carousel-control-next {
+	height: 44px;
+	width: 40px;
+	background: #001dc4;	
+	margin: auto 0;
+	border-radius: 4px;
+	opacity: 0.8;
 }
-.scroll {
-  overflow-x: scroll;
+.carousel-control-prev:hover, .carousel-control-next:hover {
+	background: #0f3ed8;
+	opacity: 1;
 }
-.scroll::-webkit-scrollbar{
-  width: 0;
+.carousel-control-prev i, .carousel-control-next i {
+	font-size: 36px;
+	position: absolute;
+	top: 50%;
+	display: inline-block;
+	margin: -19px 0 0 0;
+	z-index: 5;
+	left: 0;
+	right: 0;
+	color: #fff;
+	text-shadow: none;
+	font-weight: bold;
 }
-#rightArrow {
-
-  width:40px;
-  height:40px;
-  position:right;
-  right:0px;
+.carousel-control-prev i {
+	margin-left: -2px;
 }
-#LeftArrow {
-
-  width:40px;
-  height:40px;
-  position:right;
-  right:0px;
-}
+.carousel-control-next i {
+	margin-right: -4px;
+}		
 #read {
   border-radius: 10px;
   background: linear-gradient(180deg, #0F3C76 0%, #0B2B55 100%);
@@ -256,7 +280,8 @@ body
   color: #FDCA76;
   text-align: center;
   width: 100px;
-  left: 40px;
+  left: 20px;
+  bottom: 35px;
 }
 @media only screen and (min-width: 600px)
 {
@@ -265,15 +290,45 @@ body
     background-repeat: no-repeat;
     background-position: right;
     }
-
+  .card {
+    width: 210px;
+  }
+  .button{
+    left: 77%;
+  }
+  .carousel{
+    width: 680px;
+    margin-right: -5px;
+  }
+  .card-distance {
+    padding-left: 10px;
+    padding-right: 30px;
+  }
 }
 @media only screen and (min-width: 800px)
-{
-    .card-distance {
-      padding-left: 85px;
-      padding-right: 85px;
+{ 
+  #our-courses {
+    background-image: url("../Images/Courses_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
     }
+  .card {
+    width: 260px;
+  }
+  .button{
+    left: 80%;
+  }
+  .carousel{
+    width: 1200px;
+    margin-left: -50px;
+  }
+  .card-distance {
+    padding-left: 10px;
+    padding-right: 25px;
+  }
+
 }
+
 /*Our Courses End*/
 
 /*Our Mission*/
