@@ -298,11 +298,11 @@ body
   }
   .carousel{
     width: 680px;
-    margin-right: -5px;
+    margin-left: -45px;
   }
   .card-distance {
     padding-left: 10px;
-    padding-right: 30px;
+    padding-right: 25px;
   }
 }
 @media only screen and (min-width: 800px)
