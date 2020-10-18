@@ -291,21 +291,21 @@ body
     background-position: right;
     }
   .card {
-    width: 210px;
+    width: 211px;
   }
   .button{
     left: 77%;
   }
   .carousel{
     width: 680px;
-    margin-left: -45px;
+    margin-left: -3px;
   }
   .card-distance {
     padding-left: 10px;
     padding-right: 25px;
   }
 }
-@media only screen and (min-width: 800px)
+@media only screen and (min-width: 1024px)
 { 
   #our-courses {
     background-image: url("../Images/Courses_bg.jpg");
@@ -321,6 +321,7 @@ body
   .carousel{
     width: 1200px;
     margin-left: -50px;
+    
   }
   .card-distance {
     padding-left: 10px;
